@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Romantic Journey | 東京・京都雙人浪漫之旅</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        jp: {
+                            bg: '#121316',
+                            card: '#1a1c23',
+                            cardHover: '#222530',
+                            border: '#2a2d3d',
+                            sakura: '#f4a2b8',
+                            sakuraLight: '#fde8ef',
+                            accent: '#e5a93b',
+                            textMuted: '#9aa0b4'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                        serif: ['Shippori Mincho', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Shippori+Mincho:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121316;
+            color: #e2e8f0;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .japanese-title {
+            font-family: 'Shippori Mincho', serif;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121316;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a2d3d;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f4a2b8;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col pb-12">
+
+    <!-- Navbar Header -->
+    <header class="border-b border-jp-border bg-jp-bg/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl text-jp-sakura"><i class="fa-solid fa-torii-gate"></i></span>
+                <div>
+                    <h1 class="text-lg font-bold japanese-title tracking-wide text-white">東京 & 京都雙人浪漫行</h1>
+                    <p class="text-xs text-jp-textMuted">2026.11.10 - 11.15・5 Days Autumn Getaway</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="bg-jp-sakura/10 text-jp-sakura text-xs font-semibold px-3 py-1 rounded-full border border-jp-sakura/20 flex items-center gap-1.5">
+                    <i class="fa-solid fa-heart text-xs"></i> 雙人限定
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-5xl mx-auto px-4 mt-6 space-y-6 flex-1 w-full">
+
+        <!-- Hero Metadata Dashboard Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <!-- Flight Info Card -->
+            <div class="bg-jp-card border border-jp-border rounded-2xl p-4 hover:border-jp-sakura/40 transition-all duration-300">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2 text-jp-sakura font-semibold text-sm">
+                        <i class="fa-solid fa-plane-flight"></i> 航班資訊
+                    </div>
+                    <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20">星宇航空</span>
+                </div>
+                <div class="flex items-center justify-between text-sm py-1">
+                    <div>
+                        <div class="text-xl font-bold text-white">TPE</div>
+                        <div class="text-xs text-jp-textMuted">08:30 桃園</div>
+                    </div>
+                    <div class="flex flex-col items-center px-2">
+                        <span class="text-[10px] text-jp-textMuted">3h 15m</span>
+                        <i class="fa-solid fa-arrow-right text-xs text-jp-sakura my-1"></i>
+                        <span class="text-[10px] text-jp-accent">JX800</span>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-xl font-bold text-white">NRT</div>
+                        <div class="text-xs text-jp-textMuted">12:45 成田</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Card -->
+            <div class="bg-jp-card border border-jp-border rounded-2xl p-4 hover:border-jp-sakura/40 transition-all duration-300">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2 text-jp-accent font-semibold text-sm">
+                        <i class="fa-solid fa-hotel"></i> 住宿飯店
+                    </div>
+                    <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded border border-emerald-500/20">已確認</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white text-sm truncate">星野 Group OMO5 東京大塚</h3>
+                    <p class="text-xs text-jp-textMuted mt-1 flex items-center gap-1">
+                        <i class="fa-solid fa-location-dot text-jp-sakura"></i> JR山手線 大塚站 徒歩1分
+                    </p>
+                    <div class="mt-2 text-[11px] text-slate-300 bg-jp-bg px-2.5 py-1 rounded border border-jp-border flex justify-between">
+                        <span>預約號: #HOS-99281</span>
+                        <span class="text-jp-accent">含朝食</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlights Card -->
+            <div class="bg-jp-card border border-jp-border rounded-2xl p-4 hover:border-jp-sakura/40 transition-all duration-300">
+                <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2 text-purple-400 font-semibold text-sm">
+                        <i class="fa-solid fa-sparkles"></i> 行程亮點
+                    </div>
+                    <span class="text-[10px] bg-purple-500/10 text-purple-300 px-2 py-0.5 rounded">Romantic</span>
+                </div>
+                <div class="flex flex-wrap gap-1.5 mt-2">
+                    <span class="text-xs bg-jp-bg border border-jp-border px-2.5 py-1 rounded-full text-slate-300"><i class="fa-solid fa-camera text-jp-sakura mr-1"></i>和服體驗</span>
+                    <span class="text-xs bg-jp-bg border border-jp-border px-2.5 py-1 rounded-full text-slate-300"><i class="fa-solid fa-utensils text-jp-accent mr-1"></i>懷石料理</span>
+                    <span class="text-xs bg-jp-bg border border-jp-border px-2.5 py-1 rounded-full text-slate-300"><i class="fa-solid fa-tree-deciduous text-red-400 mr-1"></i>嵐山賞楓</span>
+                    <span class="text-xs bg-jp-bg border border-jp-border px-2.5 py-1 rounded-full text-slate-300"><i class="fa-solid fa-wine-glass text-amber-300 mr-1"></i>高空酒吧</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Date Tabs Nav -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 pt-2 border-b border-jp-border scrollbar-none" id="dateTabs">
+            <button onclick="switchTab('day1')" id="tab-day1" class="tab-btn active border-b-2 border-jp-sakura text-jp-sakura font-bold px-4 py-2 text-sm flex items-center gap-2 whitespace-nowrap transition-all">
+                <span>Day 1</span>
+                <span class="text-xs font-normal opacity-80">(11/10 二) 初抵東京</span>
+            </button>
+            <button onclick="switchTab('day2')" id="tab-day2" class="tab-btn text-jp-textMuted hover:text-white border-b-2 border-transparent font-medium px-4 py-2 text-sm flex items-center gap-2 whitespace-nowrap transition-all">
+                <span>Day 2</span>
+                <span class="text-xs font-normal opacity-80">(11/11 三) 澀谷與高空夜景</span>
+            </button>
+            <button onclick="switchTab('day3')" id="tab-day3" class="tab-btn text-jp-textMuted hover:text-white border-b-2 border-transparent font-medium px-4 py-2 text-sm flex items-center gap-2 whitespace-nowrap transition-all">
+                <span>Day 3</span>
+                <span class="text-xs font-normal opacity-80">(11/12 四) 古都京都賞楓</span>
+            </button>
+            <button onclick="switchTab('day4')" id="tab-day4" class="tab-btn text-jp-textMuted hover:text-white border-b-2 border-transparent font-medium px-4 py-2 text-sm flex items-center gap-2 whitespace-nowrap transition-all">
+                <span>Day 4</span>
+                <span class="text-xs font-normal opacity-80">(11/13 五) 浪漫漫步購物</span>
+            </button>
+        </div>
+
+        <!-- DAY 1 CONTENT -->
+        <div id="day1" class="tab-content space-y-6">
+            <!-- Summary Bar -->
+            <div class="bg-jp-card/50 border border-jp-border/60 rounded-xl px-4 py-3 flex flex-wrap items-center justify-between gap-3 text-xs text-jp-textMuted">
+                <div class="flex items-center gap-4">
+                    <span><i class="fa-solid fa-shoe-prints text-jp-sakura mr-1"></i>預估步數: <strong class="text-white">11,000 步</strong></span>
+                    <span><i class="fa-solid fa-cloud-sun text-jp-accent mr-1"></i>天氣: <strong class="text-white">晴朗 18°C</strong></span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="bg-jp-sakura/10 text-jp-sakura px-2 py-0.5 rounded border border-jp-sakura/20">出發日</span>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l-2 border-jp-border/80 ml-3 md:ml-6 space-y-8 pl-6 md:pl-8 py-2">
+                
+                <!-- Event 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-jp-bg border-2 border-jp-sakura flex items-center justify-center text-[8px] text-jp-sakura">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="bg-jp-card border border-jp-border rounded-xl p-4 transition-all hover:border-slate-600">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-xs font-bold text-jp-sakura tracking-wider"><i class="fa-regular fa-clock mr-1"></i>13:30 - 15:00</span>
+                            <span class="text-[10px] bg-blue-500/10 text-blue-300 px-2 py-0.5 rounded">交通/搭車</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mt-1">成田機場搭乘 N'EX 特快直達新宿 / 大塚</h4>
+                        <p class="text-xs text-jp-textMuted mt-1">領取 Skyliner / JR Pass 實體票券，並在車上享用自動販賣機買的午後紅茶。</p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-jp-bg border-2 border-jp-accent flex items-center justify-center text-[8px] text-jp-accent">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="bg-jp-card border border-jp-border rounded-xl p-4 transition-all hover:border-slate-600">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-xs font-bold text-jp-accent tracking-wider"><i class="fa-regular fa-clock mr-1"></i>15:30 - 16:30</span>
+                            <span class="text-[10px] bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded">飯店 Check-in</span>
+                        </div>
+                        <h4 class="text-base font-bold text-white mt-1">星野 OMO5 東京大塚 入住休息</h4>
+                        <p class="text-xs text-jp-textMuted mt-1">開箱客房，放置行李，稍微梳洗準備展開浪漫晚宴行程。</p>
+                        <div class="mt-3 bg-jp-bg/60 p-2.5 rounded-lg border border-jp-border/50 text-xs text-slate-300">
+                            <i class="fa-solid fa-lightbulb text-amber-400 mr-1.5"></i><strong>小驚喜提示：</strong> 提前將購買好的日系乾燥花束放置在房間角落作為慶祝旅行開端。
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Option Card: Plan A vs Plan B -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-jp-bg border-2 border-purple-400 flex items-center justify-center text-[8px] text-purple-400">
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold text-purple-400 tracking-wider"><i class="fa-regular fa-clock mr-1"></i>18:00 - 21:00 晚餐與夜晚行程 (擇一備案)</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <!-- Plan A -->
+                            <div class="bg-jp-card border-2 border-jp-sakura/60 rounded-xl p-4 relative overflow-hidden">
+                                <div class="absolute top-0 right-0 bg-jp-sakura text-jp-bg font-bold text-[10px] px-2 py-0.5 rounded-bl">Plan A 首選</div>
+                                <h5 class="font-bold text-white text-sm flex items-center gap-1.5">
+                                    <i class="fa-solid fa-utensils text-jp-sakura"></i> 新宿歌舞伎町 Omoide Yokocho 燒鳥
+                                </h5>
+                                <p class="text-xs text-jp-textMuted mt-2 leading-relaxed">
+                                    感受濃厚的昭和懷舊氛圍，微醺串燒與啤酒，拍照超有氛圍。
+                                </p>
+                                <span class="inline-block mt-3 text-[11px] text-jp-sakura"><i class="fa-solid fa-square-check mr-1"></i>預約狀態: 已訂位 18:30</span>
+                            </div>
+
+                            <!-- Plan B -->
+                            <div class="bg-jp-card border border-jp-border rounded-xl p-4 opacity-80 hover:opacity-100 transition-opacity">
+                                <div class="absolute top-0 right-0 bg-jp-border text-jp-textMuted text-[10px] px-2 py-0.5 rounded-bl">Plan B 雨天備案</div>
+                                <h5 class="font-bold text-white text-sm flex items-center gap-1.5">
+                                    <i class="fa-solid fa-store text-slate-400"></i> 六本木 Hills 展望台夜景 + 高級西餐
+                                </h5>
+                                <p class="text-xs text-jp-textMuted mt-2 leading-relaxed">
+                                    若下雨則改去室內觀景台俯瞰東京鐵塔，於室內餐廳享用精緻晚餐。
+                                </p>
+                                <span class="inline-block mt-3 text-[11px] text-jp-textMuted"><i class="fa-solid fa-circle-info mr-1"></i>備註: 視天氣調整</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DAY 2 CONTENT -->
+        <div id="day2" class="tab-content hidden space-y-6">
+            <div class="bg-jp-card/50 border border-jp-border/60 rounded-xl px-4 py-3 flex flex-wrap items-center justify-between gap-3 text-xs text-jp-textMuted">
+                <div class="flex items-center gap-4">
+                    <span><i class="fa-solid fa-shoe-prints text-jp-sakura mr-1"></i>預估步數: <strong class="text-white">16,000 步</strong></span>
+                    <span><i class="fa-solid fa-sun text-jp-accent mr-1"></i>天氣: <strong class="text-white">晴朗 20°C</strong></span>
+                </div>
+            </div>
+
+            <div class="relative border-l-2 border-jp-border/80 ml-3 md:ml-6 space-y-8 pl-6 md:pl-8 py-2">
+                <!-- Event 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-jp-bg border-2 border-jp-sakura flex items-center justify-center text-[8px] text-jp-sakura">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="bg-jp-card border border-jp-border rounded-xl p-4">
+                        <span class="text-xs font-bold text-jp-sakura tracking-wider"><i class="fa-regular fa-clock mr-1"></i>10:00 - 13:00</span>
+                        <h4 class="text-base font-bold text-white mt-1">明治神宮漫步 & 原宿表參道咖啡漫遊</h4>
+                        <p class="text-xs text-jp-textMuted mt-1">穿過林蔭參道祈福，隨後至表參道風格咖啡廳享用早午餐與鬆餅。</p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-jp-bg border-2 border-jp-accent flex items-center justify-center text-[8px] text-jp-accent">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="bg-jp-card border border-jp-border rounded-xl p-4">
+                        <span class="text-xs font-bold text-jp-accent tracking-wider"><i class="fa-regular fa-clock mr-1"></i>16:30 - 19:00</span>
+                        <h4 class="text-base font-bold text-white mt-1">Shibuya Sky 澀谷空 sky 黃昏日落浪漫時刻</h4>
+                        <p class="text-xs text-jp-textMuted mt-1">提前預訂夕陽時段票券，捕捉夕陽餘暉下的東京天際線與富士山剪影。</p>
+                        <div class="mt-2 text-xs text-jp-sakura bg-jp-sakura/10 p-2 rounded border border-jp-sakura/20">
+                            <i class="fa-solid fa-ticket mr-1"></i>電子門票已儲存於手機 Apple Wallet
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 3 CONTENT -->
+        <div id="day3" class="tab-content hidden space-y-6">
+            <div class="bg-jp-card/50 border border-jp-border/60 rounded-xl px-4 py-3 flex items-center justify-between text-xs text-jp-textMuted">
+                <div><i class="fa-solid fa-train text-jp-sakura mr-1"></i>搭乘新幹線前往京都</div>
+                <div><i class="fa-solid fa-shoe-prints text-jp-sakura mr-1"></i>預估步數: <strong class="text-white">14,000 步</strong></div>
+            </div>
+
+            <div class="relative border-l-2 border-jp-border/80 ml-3 md:ml-6 space-y-8 pl-6 md:pl-8 py-2">
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-jp-bg border-2 border-jp-sakura flex items-center justify-center text-[8px] text-jp-sakura">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="bg-jp-card border border-jp-border rounded-xl p-4">
+                        <span class="text-xs font-bold text-jp-sakura tracking-wider"><i class="fa-regular fa-clock mr-1"></i>09:00 - 12:00</span>
+                        <h4 class="text-base font-bold text-white mt-1">新幹線品川至京都 & 清水寺雙人和服體驗</h4>
+                        <p class="text-xs text-jp-textMuted mt-1">換上古風和服，漫步二年坂、三年坂，拍攝雙人紀念寫真。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DAY 4 CONTENT -->
+        <div id="day4" class="tab-content hidden space-y-6">
+            <div class="bg-jp-card/50 border border-jp-border/60 rounded-xl px-4 py-3 text-xs text-jp-textMuted">
+                <i class="fa-solid fa-bag-shopping text-jp-accent mr-1"></i>禮物採買與浪漫歸途整備
+            </div>
+
+            <div class="relative border-l-2 border-jp-border/80 ml-3 md:ml-6 space-y-8 pl-6 md:pl-8 py-2">
+                <div class="relative group">
+                    <div class="absolute -left-[31px] md:-left-[39px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-jp-bg border-2 border-jp-accent flex items-center justify-center text-[8px] text-jp-accent">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="bg-jp-card border border-jp-border rounded-xl p-4">
+                        <span class="text-xs font-bold text-jp-accent tracking-wider"><i class="fa-regular fa-clock mr-1"></i>14:00 - 17:00</span>
+                        <h4 class="text-base font-bold text-white mt-1">銀座甜點巡禮與紀念品採買</h4>
+                        <p class="text-xs text-jp-textMuted mt-1">品嚐精緻千層蛋糕、購買伴手禮與彩妝用品。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Checklist & Reservations Widget Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+            
+            <!-- Checklist Card -->
+            <div class="bg-jp-card border border-jp-border rounded-2xl p-4">
+                <div class="flex items-center justify-between mb-3 border-b border-jp-border pb-2">
+                    <h3 class="font-bold text-sm text-white flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-jp-sakura"></i> 行前準備清單
+                    </h3>
+                    <span class="text-[11px] text-jp-textMuted" id="checklistProgress">3 / 5 完成</span>
+                </div>
+                <div class="space-y-2.5 text-xs text-slate-300">
+                    <label class="flex items-center gap-2.5 cursor-pointer hover:text-white">
+                        <input type="checkbox" checked onchange="updateChecklist()" class="rounded border-jp-border text-jp-sakura focus:ring-0 focus:ring-offset-0 bg-jp-bg">
+                        <span class="line-through text-jp-textMuted">填寫 Visit Japan Web (入境 QR Code)</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer hover:text-white">
+                        <input type="checkbox" checked onchange="updateChecklist()" class="rounded border-jp-border text-jp-sakura focus:ring-0 focus:ring-offset-0 bg-jp-bg">
+                        <span class="line-through text-jp-textMuted">租借網卡 / eSIM 設定</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer hover:text-white">
+                        <input type="checkbox" checked onchange="updateChecklist()" class="rounded border-jp-border text-jp-sakura focus:ring-0 focus:ring-offset-0 bg-jp-bg">
+                        <span class="line-through text-jp-textMuted">開通 Suica / ICOCA 手機卡片</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer hover:text-white">
+                        <input type="checkbox" onchange="updateChecklist()" class="rounded border-jp-border text-jp-sakura focus:ring-0 focus:ring-offset-0 bg-jp-bg">
+                        <span>預約 Shibuya Sky 門票</span>
+                    </label>
+                    <label class="flex items-center gap-2.5 cursor-pointer hover:text-white">
+                        <input type="checkbox" onchange="updateChecklist()" class="rounded border-jp-border text-jp-sakura focus:ring-0 focus:ring-offset-0 bg-jp-bg">
+                        <span>準備日幣現金 50,000 円</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Notes & Quick Links -->
+            <div class="bg-jp-card border border-jp-border rounded-2xl p-4 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-3 border-b border-jp-border pb-2">
+                        <h3 class="font-bold text-sm text-white flex items-center gap-2">
+                            <i class="fa-solid fa-heart-pulse text-jp-sakura"></i> 雙人貼心備忘
+                        </h3>
+                        <span class="text-[10px] bg-jp-accent/10 text-jp-accent px-2 py-0.5 rounded">Note</span>
+                    </div>
+                    <ul class="text-xs text-jp-textMuted space-y-2 list-disc list-inside">
+                        <li>日本電壓 100V，台灣雙腳插頭可直接使用，免轉接頭。</li>
+                        <li>氣溫約 12-18°C，建議多層次穿搭（洋蔥式穿法）。</li>
+                        <li>鞋子一定要選擇舒適好走軟底鞋！</li>
+                    </ul>
+                </div>
+                <div class="mt-4 pt-3 border-t border-jp-border/60 flex items-center justify-between text-xs">
+                    <span class="text-jp-textMuted">緊急聯絡: 台北駐日代表處</span>
+                    <a href="tel:+81332807811" class="text-jp-sakura hover:underline font-semibold"><i class="fa-solid fa-phone text-xs mr-1"></i>+81-3-3280-7811</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-xs text-jp-textMuted">
+        <p class="japanese-title text-sm text-slate-400 mb-1">二人の特別な旅の記録</p>
+        <p>Made with ❤️ for Japan Trip 2026</p>
+    </footer>
+
+    <!-- Tab Switching JavaScript Logic -->
+    <script>
+        function switchTab(dayId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Show selected tab content
+            const activeContent = document.getElementById(dayId);
+            if(activeContent) {
+                activeContent.classList.remove('hidden');
+            }
+
+            // Reset tab styles
+            const tabs = document.querySelectorAll('.tab-btn');
+            tabs.forEach(tab => {
+                tab.classList.remove('border-jp-sakura', 'text-jp-sakura', 'font-bold');
+                tab.classList.add('border-transparent', 'text-jp-textMuted', 'font-medium');
+            });
+
+            // Active current tab
+            const currentTab = document.getElementById('tab-' + dayId);
+            if(currentTab) {
+                currentTab.classList.remove('border-transparent', 'text-jp-textMuted', 'font-medium');
+                currentTab.classList.add('border-jp-sakura', 'text-jp-sakura', 'font-bold');
+            }
+        }
+
+        function updateChecklist() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            let checkedCount = 0;
+            checkboxes.forEach(cb => {
+                if(cb.checked) checkedCount++;
+            });
+            document.getElementById('checklistProgress').innerText = `${checkedCount} / ${checkboxes.length} 完成`;
+        }
+    </script>
+</body>
+</html>
